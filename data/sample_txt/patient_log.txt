@@ -1,0 +1,9 @@
+Patient ID: P10234
+Name: Ramesh Kumar
+Age: 56
+Symptoms: Shortness of breath, mild chest pain, fatigue
+Past History: Hypertension, Type 2 Diabetes
+Allergies: Penicillin
+Current Medication: Metformin, Amlodipine
+Notes: Patient reports worsening fatigue in last 5 days. 
+Suggested next steps: ECG, Chest X-ray, consult cardiologist.

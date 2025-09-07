@@ -1,0 +1,7 @@
+Doctor Note - Visit Date: 2025-09-06
+Patient: Priya Singh, Age 42
+Chief Complaint: Persistent cough, fever (101F), body ache
+Exam Findings: Crackles in right lower lung, O2 saturation 92%
+Assessment: Suspected pneumonia
+Plan: Order Chest X-ray, prescribe Azithromycin (if no allergies), advise rest and fluids.
+Follow-up: Re-evaluate after 5 days or if symptoms worsen.
