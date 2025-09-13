@@ -1,4 +1,4 @@
-# File: requirements.txt (Simplified Version)
+# File: requirements.txt 
 
 # Web Servers
 Flask
@@ -22,8 +22,8 @@ torch
 torchvision
 pandas
 openpyxl
-spacy==3.7.2
 scispacy==0.5.3
+spacy==3.6.3 
 
 # Utilities
 requests
