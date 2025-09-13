@@ -1,0 +1,57 @@
+/* File: frontend/style.css */
+
+/* --- Main App Styling --- */
+/* Hide the default Streamlit header and footer */
+#MainMenu,
+footer {
+    visibility: hidden;
+}
+
+/* Style for the main content area to account for the fixed top bar */
+.main .block-container {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
+}
+
+
+/* --- Custom Top Bar --- */
+.top-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 55px;
+    /* Adjust height as needed */
+    background-color: #0056b3;
+    /* A professional blue */
+    color: white;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 2px solid #00418a;
+}
+
+/* Status Badge in Top Bar */
+.online-badge {
+    background-color: #28a745;
+    /* Green for online */
+    color: white;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8em;
+    font-weight: 600;
+    margin-left: 1rem;
+}
+
+/* Styling for buttons */
+div.stButton>button {
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+/* Styling for containers with borders */
+div[data-testid="stVerticalBlock"]>div[data-testid="stVerticalBlock"]>div[data-testid="stVerticalBlock"] {
+    border-radius: 10px;
+}
