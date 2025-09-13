@@ -1,4 +1,7 @@
-# File: requirements.txt 
+# File: requirements.txt (Final Version with Python Pin)
+
+# --- CRITICAL: Force Streamlit to use a more stable environment ---
+python==3.11
 
 # Web Servers
 Flask
@@ -23,7 +26,7 @@ torchvision
 pandas
 openpyxl
 scispacy==0.5.3
-spacy==3.6.3 
+spacy==3.6.3
 
 # Utilities
 requests
