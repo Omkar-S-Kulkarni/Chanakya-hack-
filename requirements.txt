@@ -1,0 +1,14 @@
+PyMuPDF
+pdfplumber
+opencv-python-headless
+pytesseract
+spacy==3.7.2
+scispacy==0.5.3
+fuzzywuzzy
+python-levenshtein
+easyocr
+torch
+torchvision
+langchain
+sentence-transformers
+faiss-cpu

@@ -1,0 +1,73 @@
+{
+  "source_file": "prescription.pdf",
+  "is_scanned": false,
+  "cleaned_text": "Prescription Patient: Amit Sharma, Age 35 Date: 2025-09-06 --------------------------------------------- Rx: Metformin 500mg twice daily Rx: Atorvastatin 10mg once daily --------------------------------------------- Instructions: Take medicines with meals. Avoid alcohol. Regular exercise advised. Doctor: Dr. S. Mehta (MD, Internal Medicine)",
+  "extracted_data": {
+    "generic_entities": [
+      {
+        "text": "Prescription",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Patient",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Amit Sharma",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Age",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Rx",
+        "label": "ENTITY"
+      },
+      {
+        "text": "daily",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Rx",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Atorvastatin",
+        "label": "ENTITY"
+      },
+      {
+        "text": "daily",
+        "label": "ENTITY"
+      },
+      {
+        "text": "medicines",
+        "label": "ENTITY"
+      },
+      {
+        "text": "meals",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Regular",
+        "label": "ENTITY"
+      },
+      {
+        "text": "exercise",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Doctor",
+        "label": "ENTITY"
+      },
+      {
+        "text": "MD",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Internal Medicine",
+        "label": "ENTITY"
+      }
+    ]
+  }
+}

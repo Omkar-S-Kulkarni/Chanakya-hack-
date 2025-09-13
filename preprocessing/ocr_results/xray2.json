@@ -1,0 +1,24 @@
+{
+  "file_name": "C:\\Users\\svks6\\Chanakya-hack-\\data\\sample_images\\xray2.jpg",
+  "cleaned_text": "1' Emphuzrn; (by Infiltratis lclctasi: rcumarhngn tcnncins MFnl-",
+  "extracted_data": {
+    "generic_entities": [
+      {
+        "text": "Emphuzrn",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Infiltratis lclctasi",
+        "label": "ENTITY"
+      },
+      {
+        "text": "rcumarhngn",
+        "label": "ENTITY"
+      },
+      {
+        "text": "MFnl-",
+        "label": "ENTITY"
+      }
+    ]
+  }
+}

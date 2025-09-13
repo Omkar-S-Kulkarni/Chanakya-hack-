@@ -1,0 +1,109 @@
+{
+  "source_file": "discharge_summary.pdf",
+  "is_scanned": false,
+  "cleaned_text": "Discharge Summary Patient: Priya Singh, Age 42 Admission: 2025-09-01 | Discharge: 2025-09-06 Diagnosis: Community-acquired pneumonia Hospital Course: Responded well to IV antibiotics, oxygen support given. Medications on Discharge: Azithromycin 500mg daily x 5 days, Paracetamol PRN. Follow-up: Chest X-ray after 2 weeks, consult pulmonologist. Instructions: Rest, hydrate, monitor temperature.",
+  "extracted_data": {
+    "generic_entities": [
+      {
+        "text": "Discharge Summary",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Patient",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Priya Singh",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Age",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Admission",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Discharge",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Diagnosis",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Community-acquired pneumonia Hospital",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Responded",
+        "label": "ENTITY"
+      },
+      {
+        "text": "antibiotics",
+        "label": "ENTITY"
+      },
+      {
+        "text": "oxygen support",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Medications",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Discharge",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Azithromycin",
+        "label": "ENTITY"
+      },
+      {
+        "text": "daily",
+        "label": "ENTITY"
+      },
+      {
+        "text": "days",
+        "label": "ENTITY"
+      },
+      {
+        "text": "PRN",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Follow-up",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Chest X-ray",
+        "label": "ENTITY"
+      },
+      {
+        "text": "weeks",
+        "label": "ENTITY"
+      },
+      {
+        "text": "consult pulmonologist",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Rest",
+        "label": "ENTITY"
+      },
+      {
+        "text": "hydrate",
+        "label": "ENTITY"
+      },
+      {
+        "text": "monitor",
+        "label": "ENTITY"
+      },
+      {
+        "text": "temperature",
+        "label": "ENTITY"
+      }
+    ]
+  }
+}
