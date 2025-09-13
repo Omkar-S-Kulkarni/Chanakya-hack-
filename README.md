@@ -1,1 +1,1 @@
-# Chanakya Hack
+# Chanakya Hackathon
