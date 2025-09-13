@@ -1,0 +1,24 @@
+{
+  "file_name": "C:\\Users\\svks6\\Chanakya-hack-\\data\\sample_images\\xray1.jpg",
+  "cleaned_text": "E9m Yeua AaIecai: Cic ak Flu,ion Iniltaaltion Jay Nadule Pncumania Pncumatham",
+  "extracted_data": {
+    "generic_entities": [
+      {
+        "text": "E9m",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Yeua AaIecai",
+        "label": "ENTITY"
+      },
+      {
+        "text": "ion Iniltaaltion Jay Nadule",
+        "label": "ENTITY"
+      },
+      {
+        "text": "Pncumatham",
+        "label": "ENTITY"
+      }
+    ]
+  }
+}

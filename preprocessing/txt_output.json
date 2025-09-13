@@ -1,0 +1,20 @@
+[
+    {
+        "file_name": "doctor_note.txt",
+        "file_path": "C:\\Users\\svks6\\Chanakya-hack-\\data\\sample_txt\\doctor_note.txt",
+        "type": "text",
+        "content": "Doctor Note - Visit Date: 2025-09-06\nPatient: Priya Singh, Age 42\nChief Complaint: Persistent cough, fever (101F), body ache\nExam Findings: Crackles in right lower lung, O2 saturation 92%\nAssessment: Suspected pneumonia\nPlan: Order Chest X-ray, prescribe Azithromycin (if no allergies), advise rest and fluids.\nFollow-up: Re-evaluate after 5 days or if symptoms worsen."
+    },
+    {
+        "file_name": "lab_report_explainer.txt",
+        "file_path": "C:\\Users\\svks6\\Chanakya-hack-\\data\\sample_txt\\lab_report_explainer.txt",
+        "type": "text",
+        "content": "Lab Report - Blood Panel\nPatient: Amit Sharma, Age 35\n\nHemoglobin: 12.2 g/dL (Normal: 13.8–17.2) → Slightly low\nWBC Count: 11,500 /µL (Normal: 4,000–11,000) → Mildly elevated\nBlood Sugar (Fasting): 142 mg/dL (Normal: <100) → High\n\nInterpretation (for patient): \n- You may have mild anemia (low hemoglobin).\n- Your white blood cell count suggests possible infection or inflammation.\n- Your blood sugar is higher than normal, could indicate pre-diabetes or diabetes.\n\nRecommendation: Consult physician for further evaluation, diet changes, repeat sugar test in 2 weeks."
+    },
+    {
+        "file_name": "patient_log.txt",
+        "file_path": "C:\\Users\\svks6\\Chanakya-hack-\\data\\sample_txt\\patient_log.txt",
+        "type": "text",
+        "content": "Patient ID: P10234\nName: Ramesh Kumar\nAge: 56\nSymptoms: Shortness of breath, mild chest pain, fatigue\nPast History: Hypertension, Type 2 Diabetes\nAllergies: Penicillin\nCurrent Medication: Metformin, Amlodipine\nNotes: Patient reports worsening fatigue in last 5 days. \nSuggested next steps: ECG, Chest X-ray, consult cardiologist."
+    }
+]
