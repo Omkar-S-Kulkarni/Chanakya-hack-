@@ -1,25 +1,31 @@
+# File: requirements.txt
+
+# Web Servers
+Flask
+streamlit
+
+# Google Gemini API
+google-generativeai
+python-dotenv
+
+# RAG and Vector Store
+sentence-transformers
+faiss-cpu
+langchain
+
+# Processors
 PyMuPDF
 pdfplumber
 opencv-python-headless
-pytesseract
-spacy==3.7.2
-scispacy==0.5.3
-fuzzywuzzy
-python-levenshtein
 easyocr
 torch
 torchvision
-langchain
-sentence-transformers
-faiss-cpu
-# Web Server
-Flask
-python-dotenv
-pandas 
-# Google Gemini API
-google-generativeai
+pandas
 openpyxl
+spacy==3.7.2
+scispacy==0.5.3
 https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_core_sci_sm-0.5.3.tar.gz
 
 # Utilities
 numpy==1.26.4
+requests
