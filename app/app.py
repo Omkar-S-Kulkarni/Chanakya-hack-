@@ -10,7 +10,7 @@ from processors.image_processor import process_image
 from processors.spreadsheet_processor import process_spreadsheet
 from rule_engine import RuleEngine
 from gemini_agent import GeminiAgent
-from evaluation_agent import EvaluationAgent # <-- IMPORT AGENT 2
+from evaluation_agent import EvaluationAgent  # <-- Agent 2
 
 load_dotenv()
 
@@ -26,17 +26,16 @@ app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 print("Initializing all modules...")
 rule_engine = RuleEngine()
 gemini_agent_1 = GeminiAgent(api_key=os.getenv("GOOGLE_API_KEY"))
-evaluation_agent_2 = EvaluationAgent(api_key=os.getenv("GOOGLE_API_KEY")) # <-- INITIALIZE AGENT 2
+evaluation_agent_2 = EvaluationAgent(api_key=os.getenv("GOOGLE_API_KEY"))  # <-- Agent 2
 print("Initialization complete. Server is ready.")
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
-
-
+# --- API ENDPOINT ---
 @app.route('/api/unified_analysis', methods=['POST'])
 def unified_analysis():
-    """A single, powerful endpoint to handle all agent tasks."""
+    """Single endpoint to handle all agent tasks."""
     print("\n--- NEW REQUEST RECEIVED ---")
     
     agent_type = request.form.get('agent_type')
@@ -69,7 +68,7 @@ def unified_analysis():
             elif ext in {'png', 'jpg', 'jpeg'}:
                 processed_file_data = process_image(file_path)
             elif ext in {'xlsx', 'xls', 'csv'}:
-                 processed_file_data = process_spreadsheet(file_path)
+                processed_file_data = process_spreadsheet(file_path)
         else:
             return jsonify({"error": "File type not allowed."}), 400
 
@@ -101,7 +100,7 @@ def unified_analysis():
     print("Passing Agent 1 output to Agent 2 for evaluation...")
     agent2_evaluation = evaluation_agent_2.evaluate_output(agent1_result)
 
-    # --- FINAL COMBINED RESPONSE ---
+    # --- FINAL RESPONSE ---
     final_response = {
         "agent1_analysis": agent1_result,
         "agent2_evaluation": agent2_evaluation

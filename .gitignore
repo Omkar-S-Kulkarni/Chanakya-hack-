@@ -1,1 +1,25 @@
 .env
+# Python venv and cache
+venv/
+app/venv/
+__pycache__/
+*.pyc
+
+# Data & models
+*.pt
+*.onnx
+*.bin
+*.h5
+*.lib
+*.dll
+*.pyd
+*.zip
+*.tar.gz
+*.csv
+*.xlsx
+*.pdf
+
+# IDE & system files
+.DS_Store
+.idea/
+.vscode/
