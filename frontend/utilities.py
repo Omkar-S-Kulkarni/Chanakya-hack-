@@ -4,46 +4,43 @@ import requests
 import json
 import streamlit as st
 
-# The URL of your running Flask backend server
-# This should match the port you are running app.py on.
+# URL of the running Flask backend server
+# Make sure this matches the port your app.py uses.
 API_URL = "http://127.0.0.1:5001/api/unified_analysis"
 
 def call_agent_api(agent_type: str, json_data: dict, file=None):
     """
-    A single, reusable function to call any agent in your backend.
+    Reusable function to call any backend agent.
 
     Args:
-        agent_type (str): The name of the agent to call (e.g., 'drug_safety').
-        json_data (dict): The text-based data for the agent (e.g., medications, symptoms).
-        file (UploadedFile, optional): An uploaded file for agents that need one.
+        agent_type (str): Name of the agent to call (e.g., 'drug_safety').
+        json_data (dict): Text-based input for the agent (e.g., medications, symptoms).
+        file (UploadedFile, optional): Uploaded file for agents that require it.
 
     Returns:
-        dict: The JSON response from the backend API.
+        dict: JSON response from the backend API.
     """
     try:
-        # Prepare the data and files to be sent in the POST request.
-        # This structure matches what the Flask server expects.
+        # Prepare the POST form data
         form_data = {
             'agent_type': agent_type,
             'json_data': json.dumps(json_data)
         }
-        
+
         files = {}
         if file:
-            # If a file is provided, we read its content into memory to send.
+            # Read the file content into memory to send
             files['file'] = (file.name, file.getvalue(), file.type)
 
-        # Show a spinner in the UI while waiting for the response.
-        with st.spinner(f"🧠 Agents are collaborating on your request... Please wait."):
-            # Make the API call with a long timeout, as AI models can take time.
+        # Display spinner while waiting for response
+        with st.spinner("🧠 Agents are collaborating on your request... Please wait."):
             response = requests.post(API_URL, data=form_data, files=files, timeout=300)
-            
-            # This will raise an error if the server returned a bad status (e.g., 404, 500)
-            response.raise_for_status()
-            
+            response.raise_for_status()  # Raise error for bad HTTP status
             return response.json()
 
     except requests.exceptions.RequestException as e:
-        # If the request fails (e.g., server is down, network error), we return a helpful error.
-        st.error(f"API Connection Error: Could not connect to the backend. Please ensure the Flask server (`app.py`) is running. Details: {e}")
+        st.error(
+            f"API Connection Error: Could not connect to the backend. "
+            f"Ensure the Flask server (`app.py`) is running. Details: {e}"
+        )
         return None
