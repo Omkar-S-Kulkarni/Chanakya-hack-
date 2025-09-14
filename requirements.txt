@@ -1,7 +1,7 @@
 # File: requirements.txt (Final Version with Python Pin)
 
 # --- CRITICAL: Force Streamlit to use a more stable environment ---
-python==3.11
+
 
 # Web Servers
 Flask
